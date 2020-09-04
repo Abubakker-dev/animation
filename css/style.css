@@ -1,0 +1,371 @@
+body {
+	margin: 0;
+}
+.box {
+	width: 800px;
+	height: 500px;
+	overflow: hidden;
+	margin: auto;
+	position: relative;
+}
+.backc {
+	width: 100%;
+	height: 100%;
+	background: #0000ff6e;
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: scale(0.4);
+	opacity: 0;
+	transition: all 1s ease;
+}
+.box:hover .backc {
+	opacity: 1;
+	transform: scale(1);
+}
+.box img {
+	max-width: 100%;
+	transform: scale(1);
+	animation-name: laptop;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+@keyframes laptop{
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(1.5);
+	}
+}
+.lorem{
+	color: white;
+	position: absolute;
+	right: 70px;
+	top: 110px;
+	font-size: 1.75rem;
+	font-weight: 500;
+	transition: all 0.5s linear;
+	opacity: 0;
+}
+.tea {
+    color: white;
+    position: absolute;
+    top: 155px;
+    right: 196px;
+    transition: all 0.8s linear;
+    opacity: 0;
+}
+.box:hover .lorem {
+	right: 70px;
+	top: 43px;
+	opacity: 1;
+}
+.box:hover .tea {
+    top: 85px;
+    right: 196px;
+    opacity: 1;
+}
+h3{
+	color: white;
+	position: absolute;
+	left: 70px;
+	bottom: 15px;
+	transition: all 0.5s linear;
+	opacity: 0;
+	margin: 0;
+}
+p{
+	color: white;
+	position: absolute;
+	left: 70px;
+	bottom: 5px;
+	transition: all 0.8s linear;
+	opacity: 0;
+	margin: 0;
+}
+.box:hover p {
+	left: 70px;
+	bottom: 50px;
+	opacity: 1;
+}
+.box:hover h3 {
+	left: 70px;
+	bottom: 80px;
+	opacity: 1;
+}
+.one {
+	font-size: 40px;
+    color: white;
+    position: absolute;
+    left: 373px;
+    top: 5%;
+    background: #454545;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    transform: translateX(50%);
+    transition: all 1s ease;
+    z-index: 9999;
+    opacity: 0;
+}
+.box:hover .one {
+	left: 373px;
+	top: 220px;
+	opacity: 1;
+}
+.two {
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+    background: #0076B3;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    transition: all 1s ease;
+    z-index: 9999;
+    opacity: 0;
+}
+.box:hover .two {
+	right: 272px;
+	top: 50%;
+	opacity: 1;
+}
+.three {
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	left: 5%;
+	bottom: 50%;
+    background: #3B5999;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    transform: translateY(50%);
+    transition: all 1s ease;
+    z-index: 9999;
+    opacity: 0;
+}
+.box:hover .three {
+	left: 273px;
+	bottom: 50%;
+	opacity: 1;
+}
+.four {
+	font-size: 40px;
+	color: white;
+	position: absolute;
+	left: 308px;
+	bottom: 5%;
+	background: #3A8BCA;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px;
+    transform: translateX(50%);
+    transition: all 1s ease;
+    z-index: 9999;
+    opacity: 0;
+}
+.box:hover .four {
+	left: 308px;
+	bottom: 220px;
+	opacity: 1;
+}
+.bord1 {
+	width: 0%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: 50%;
+	top: 30px;
+	transform: translate(-50%);
+	transition: all 1s linear;
+}
+.bord2 {
+	width: 0%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	right: 50%;
+	bottom: 30px;
+	opacity: 0;
+	transition: all 1s linear;
+	transform: translateX(50%);
+}
+.bord3 {
+    width: 2px;
+    height: 88%;
+    background: white;
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 1s linear;
+}
+.bord4 {
+    width: 2px;
+    height: 88%;
+    background: white;
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 1s linear;
+}
+.box:hover .bord1 {
+	opacity: 1;
+	width: 90%;
+}
+.box:hover .bord2 {
+	opacity: 1;
+	width: 90%;
+}
+.box:hover .bord3 {
+	opacity: 1;
+	left: 38px;
+}
+.box:hover .bord4 {
+	opacity: 1;
+	right: 38px;
+}
+.ball {
+    width: 50px;
+    height: 50px;
+    background: #eb4d4b;
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+    border-radius: 50%;
+    animation-name: balle;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes balle {
+	0%{
+	    bottom: 1px;
+	    left: 1px;
+	}	
+	25%{
+		bottom: 1px;
+    	left: 750px;
+    	background: #22a6b3;
+	}
+	50%{
+		bottom: 450px;
+    	left: 750px;
+    	background: #be2edd;
+	}	
+	75%{
+		bottom: 450px;
+    	left: 1px;
+    	background: #6ab04c;
+	}
+	100%{
+	    bottom: 1px;
+	    left: 1px;
+	    background: #30336b;
+	}
+}
+.balla {
+    width: 50px;
+    height: 50px;
+    background: #f9ca24;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    border-radius: 50%;
+    animation-name: ballarr;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+@keyframes ballarr {
+	0%{
+    	top: 1px;
+    	right: 1px;
+	}	
+	25%{
+		top: 1px;
+    	right: 750px;
+    	background: #30336b;
+	}
+	50%{
+		top: 450px;
+    	right: 750px;
+    	background: #6ab04c;
+	}	
+	75%{
+		top: 450px;
+    	right: 1px;
+    	background: #be2edd;
+	}
+	100%{
+		top: 1px;
+    	right: 1px;
+    	background: #22a6b3;
+	}
+}
+.icofont-football {
+    position: absolute;
+    left: 39px;
+    top: 60%;
+    font-size: 40px;
+    color: white;
+    opacity: 0;
+}
+.box:hover .icofont-football {
+	left: 39px;
+	top: 60%;
+	animation-name: tball;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    opacity: 1;
+}
+@keyframes tball {
+	0%{
+		left: 39px;
+		top: 60%;
+	}
+	20%{
+		left: 721px;
+		top: 60%;
+		transform: rotate(320deg);	
+	}		
+	40%{
+		left: 39px;
+		top: 60%;
+		transform: rotate(-320deg);		
+	}
+	60%{
+		left: 721px;
+		top: 60%;
+		transform: rotate(320deg);		
+	}
+	80%{
+		left: 39px;
+		top: 60%;
+		transform: rotate(-320deg);		
+	}	
+	100%{
+		left: 721px;
+		top: 60%;
+		transform: rotate(320deg);	
+	}
+}
+
